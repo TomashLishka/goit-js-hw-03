@@ -1,20 +1,6 @@
 function slugify(title) {
-
-    const lowerCaseTitle = title.toLowerCase();
-    
-    const putTogetherTitle = lowerCaseTitle.split(" ");
-
-    const throughTheDashTitle = putTogetherTitle.join("-");
-
-    
-
-    return `"${throughTheDashTitle}"`;
-
+    return title.toLowerCase().split(" ").join("-");
 }
-
-
-
-
 
 console.log(slugify("Arrays for begginers")); // "arrays-for-begginers"
 console.log(slugify("English for developer")); // "english-for-developer"
